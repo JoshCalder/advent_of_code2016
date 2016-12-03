@@ -10,16 +10,16 @@
 
 #define BUFLEN 2500
 
-int move;						// How many spaces we need to move
-char dir;						// Direction that we're moving
-int block[2];					// Our current position on the map
-char facing = 'N';				// Direction that we're currently facing
-int visited[BUFLEN][2];			// Stores all the visited x,y coordinates
-char buffer[BUFLEN];			// Buffer for file input
-int final_visited_x;			// Stores the x-coordinate of the first location visited twice
-int final_visited_y;			// Stores the y-coordinate of the first location visited twice
-int check;						// 1=True 0=False Whether a first location has been found
-int v_size;     				// keeps track of visited array size
+int move;		// How many spaces we need to move
+char dir;		// Direction that we're moving
+int block[2];		// Our current position on the map
+char facing = 'N';	// Direction that we're currently facing
+int visited[BUFLEN][2];	// Stores all the visited x,y coordinates
+char buffer[BUFLEN];	// Buffer for file input
+int final_visited_x;	// Stores the x-coordinate of the first location visited twice
+int final_visited_y;	// Stores the y-coordinate of the first location visited twice
+int check;		// 1=True 0=False Whether a first location has been found
+int v_size;     	// keeps track of visited array size
 
 /* This method checks to see if we have already visited this coordinate. 
  * Stores the value if we have.
